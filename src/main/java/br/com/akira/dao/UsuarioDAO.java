@@ -15,13 +15,13 @@ public class UsuarioDAO {
 	Connection conn = ConnectionFactory.getConnection();
 	PreparedStatement ps = null;
 
-	String sqlInsere = "INSERT INTO usuario VALUES(null,?,?,?)";
+	String sqlInsere =   "INSERT INTO usuario VALUES(null,?,?,?)";
 	String sqlAtualiza = "UPDATE usuario SET nome=?,login=?,senha=? WHERE id=?";
-	String sqlExclui = "DELETE FROM usuario WHERE id=?";
-	String sqlBuscaTodos = "SELECT * FROM usuario";
-	String sqlBuscaPorId = "SELECT * FROM usuario WHERE id=?";
+	String sqlExclui =   "DELETE FROM usuario WHERE id=?";
+	String sqlBuscaTodos = 	 "SELECT * FROM usuario";
+	String sqlBuscaPorId = 	 "SELECT * FROM usuario WHERE id=?";
 	String sqlBuscaPorNome = "SELECT * FROM usuario WHERE nome LIKE ?";
-	String sqlAutentica = "SELECT * FROM usuario WHERE login=? AND senha=?";
+	String sqlAutentica = 	 "SELECT * FROM usuario WHERE login=? AND senha=?";
 
 	public void insere(Usuario u) {
 		try {
