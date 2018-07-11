@@ -1,0 +1,13 @@
+Banco de Dados
+
+CREATE DATABASE usuariodb;
+
+USE usuariodb;
+
+CREATE TABLE usuario(
+	id int auto_increment,
+	nome  varchar(45),
+	login varchar(45),
+	senha varchar(45),
+		primary key(id)
+);
